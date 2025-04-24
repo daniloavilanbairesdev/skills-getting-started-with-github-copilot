@@ -143,14 +143,27 @@ footer {
   color: #666;
 }
 
-ul.participants-list {
-  list-style-type: disc;
-  margin: 10px 0 0 20px;
+.participants-list {
+  list-style-type: none;
   padding: 0;
-  color: #555;
-  font-size: 14px;
 }
 
-ul.participants-list li {
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 5px;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.delete-participant:hover {
+  color: #ff5252;
 }
